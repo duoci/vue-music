@@ -1,25 +1,25 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
-const Discover = () => import('@/views/discover/Discover.vue');
+const Discover = () => import('../views/discover/Discover.vue');
 const Recommend = () => import('../views/discover/childRoute/Recommend');
 const Musiclist = () => import('../views/discover/childRoute/Musiclist');
 const Ranking = () => import('../views/discover/childRoute/Ranking');
 const Singer = () => import('../views/discover/childRoute/Singer');
-const Video = () => import('@/views/video/Video.vue');
-const VideoDetail = () => import('@/views/videoDetail/VideoDetail.vue');
-const VideoList = () => import('@/views/video/videoChildren/VideoList.vue');
-const MvList = () => import('@/views/video/videoChildren/MvList.vue');
-const RecommendMusic = () => import('@/views/recommendmusic/Recommendmusic.vue');
-const Favorites = () => import('@/views/favorites/Favorites.vue');
+const Video = () => import('../views/video/Video.vue');
+const VideoDetail = () => import('../views/videoDetail/VideoDetail.vue');
+const VideoList = () => import('../views/video/videoChildren/VideoList.vue');
+const MvList = () => import('../views/video/videoChildren/MvList.vue');
+const RecommendMusic = () => import('../views/recommendmusic/Recommendmusic.vue');
+const Favorites = () => import('../views/favorites/Favorites.vue');
 const MusicListDetail = () => import('../views/musicListDetail/MusicListDetail');
-const Personal = () => import('@/views/personal');
-const SingerDetail = () => import('@/views/singerDetail/SingerDetail.vue');
+const Personal = () => import('../views/personal');
+const SingerDetail = () => import('../views/singerDetail/SingerDetail.vue');
 const Search = () => import('views/search/Search.vue');
-const SearchSong = () => import('@/views/search/searchChildren/SearchSong.vue');
-const SearchSinger = () => import('@/views/search/searchChildren/SearchSinger.vue');
-const SearchVideo = () => import('@/views/search/searchChildren/SearchVideo.vue');
-const SearchMusicList = () => import('@/views/search/searchChildren/SearchMusicList.vue');
+const SearchSong = () => import('../views/search/searchChildren/SearchSong.vue');
+const SearchSinger = () => import('../views/search/searchChildren/SearchSinger.vue');
+const SearchVideo = () => import('../views/search/searchChildren/SearchVideo.vue');
+const SearchMusicList = () => import('../views/search/searchChildren/SearchMusicList.vue');
 const routes = [
   {
     path: '/',
@@ -72,7 +72,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });

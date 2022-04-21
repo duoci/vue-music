@@ -6,7 +6,6 @@ module.exports = {
   outputDir: process.env.outputDir || 'dist',
   // 'dist', 生产环境构建文件的目录
   assetsDir: 'static',
-  // 相对于outputDir的静态资源(js、css、img、fonts)目录
   configureWebpack: {
     resolve: {
       alias: {

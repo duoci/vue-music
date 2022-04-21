@@ -1,7 +1,7 @@
 <template>
   <div class="headerBar">
     <div class="headerBar-left">
-      <img src="@/assets/img/logo.png" alt="" />
+      <img src="../../assets/img/logo.png" alt="" />
     </div>
     <div class="center">
       <div class="buttons">
@@ -202,7 +202,7 @@
       },
       // 获取热搜列表
       async getHotSearch() {
-        const res = await this.get('/search/hot/detail');
+        const res = await this.get('/search/hot/detail', { uid: 486695906 });
         this.hotSearchList = res.data;
       },
       // 跳转至搜索详情页面
