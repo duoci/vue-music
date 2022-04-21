@@ -6,7 +6,7 @@ Vue.prototype.axios = axios;
 // 该项目所有请求均为 get请求
 // axios.defaults.baseURL = 'https://apis.netstart.cn/music';
 const instance = axios.create({
-  baseURL: 'http://www.codeman.ink:3000',
+  baseURL: 'https://apis.netstart.cn/music',
   timeout: 30000,
   withCredentials: true,
 });
