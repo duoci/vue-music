@@ -27,11 +27,18 @@
     "husky": "^7.0.4",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "lint-staged": "^12.4.1",
     "vue-template-compiler": "^2.6.11"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
