@@ -10,6 +10,8 @@ const instance = axios.create({
   timeout: 30000,
   withCredentials: true,
 });
+
+// 1111
 instance.defaults.withCredentials = true;
 export const get = (url, params = {}, loading = true) => {
   return new Promise((resolve, reject) => {
