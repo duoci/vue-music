@@ -11,7 +11,7 @@ const instance = axios.create({
   withCredentials: true,
 });
 
-// 1111
+//1111
 instance.defaults.withCredentials = true;
 export const get = (url, params = {}, loading = true) => {
   return new Promise((resolve, reject) => {
