@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   devServer: {
-    host: '127.0.0.1',
+    // host: '127.0.0.1',
     proxy: {
       '/api': {
         // target: 'https://www.codeman.store',

@@ -4,15 +4,15 @@
     <div class="musicListNavBar">
       <div class="selectorItem">
         <div class="title">地区：</div>
-        <allNarbar :allNavBarData="areaList" @clickSecondBarItem="areaItem" class="secondNavBar"></allNarbar>
+        <allNarbar :allNavBarData="areaList" @clickNavBarItem="areaItem" class="secondNavBar"></allNarbar>
       </div>
       <div class="selectorItem">
         <div class="title">类型：</div>
-        <allNarbar :allNavBarData="typeList" @clickSecondBarItem="typeItem" class="secondNavBar"></allNarbar>
+        <allNarbar :allNavBarData="typeList" @clickNavBarItem="typeItem" class="secondNavBar"></allNarbar>
       </div>
       <div class="selectorItem">
         <div class="title">排序：</div>
-        <allNarbar :allNavBarData="orderList" @clickSecondBarItem="orderItem" class="secondNavBar"></allNarbar>
+        <allNarbar :allNavBarData="orderList" @clickNavBarItem="orderItem" class="secondNavBar"></allNarbar>
       </div>
     </div>
     <!-- 视频卡片列表 -->
@@ -24,15 +24,12 @@
       @clickListCardItem="goToMvDetail"
       @bottomLoad="bottomLoad"
     ></video-list-card>
-    <go-top scrollObj=".cardList"></go-top>
   </div>
 </template>
 
 <script>
   import allNarbar from '../../../components/allNavbar/index.vue';
   import VideoListCard from 'components/videoListCard/VideoListCard.vue';
-  // import GoTop from 'components/goTop/GoTop.vue';
-
   export default {
     components: { allNarbar, VideoListCard },
     name: 'MvList',

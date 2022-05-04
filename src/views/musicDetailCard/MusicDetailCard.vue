@@ -24,7 +24,7 @@
         <div class="right">
           <div class="title">
             <div class="musicName">{{ musicInfo.name }}</div>
-            <div class="album" @click="goToDetailPage('album', musicInfo.al.id)">
+            <div class="album">
               {{ musicInfo.al.name }}
             </div>
             <div class="singer" @click="goToDetailPage('singerDetail', musicInfo.ar[0].id)">

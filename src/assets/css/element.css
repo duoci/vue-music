@@ -229,6 +229,7 @@ body .el-table .el-table__row .currentRow {
 }
 
 .searchPop {
+    margin-top: 30px !important;
     height: 380px;
     overflow-y: scroll;
     margin: 0 !important;

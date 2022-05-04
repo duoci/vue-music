@@ -37,11 +37,6 @@ const state = {
   collectMusicList: [],
   // 用户创建的歌单
   createdMusicList: [],
-  // 要下载的音乐信息
-  downloadMusicInfo: {
-    name: '',
-    url: '',
-  },
   // 已喜欢的视频
   likeVideoList: null,
 };
@@ -65,7 +60,6 @@ const store = new Vuex.Store({
         state.musicListId = payload.musicListId;
         state.currentIndex = -1;
       }
-      // 对歌单进行深拷贝再赋值 直接赋值是浅拷贝
       // 歌单是固定的死数据，而vuex中的musicList是动态的
       const musicList = payload.musicList.slice(0);
       state.musicList = musicList;
@@ -119,10 +113,6 @@ const store = new Vuex.Store({
     // 更新用户创建的歌单
     updateCreatedMusicList(state, createdMusicList) {
       state.createdMusicList = createdMusicList;
-    },
-    // 更新当前下载的音乐信息
-    updateDownloadMusicInfo(state, info) {
-      state.downloadMusicInfo = info;
     },
     // 更新已喜欢的视频列表
     updateLikeVideoList(state, likeVideoList) {

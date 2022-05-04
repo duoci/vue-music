@@ -74,17 +74,17 @@
       },
       // 双击table的row的回调
       async clickRow(row) {
-        const isExist = musicList.find(item => item.id === row.id);
+        const isExist = this.musicList.find(item => item.id === row.id);
         if (isExist) {
           this.updateMusicId(row.id);
           return;
         }
         this.changePlayState(false);
         // 将请求到的歌曲详情插入到歌单对应位置并提交至vuex
-        musicList.splice(currentIndex + 1, 0, row);
+        this.musicList.splice(this.currentIndex + 1, 0, row);
         this.updateMusicId(row.id);
         this.updateMusicList({
-          musicList,
+          musicList: this.musicList,
           musicListId: this.musicListId,
         });
       },

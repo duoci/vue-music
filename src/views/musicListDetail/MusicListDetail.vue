@@ -125,7 +125,6 @@
 <script>
   import { formatDate, handleNum, handleMusicTime } from '@/plugins/utils';
   import Comment from '@/components/Comment/Comment.vue';
-  // import GoTop from 'components/goTop/GoTop.vue';
   import UserListCard from '@/components/userListCard/UserListCard.vue';
   import { mapState, mapMutations } from 'vuex';
 
@@ -163,7 +162,6 @@
     },
     components: {
       Comment,
-      // GoTop,
       UserListCard,
     },
     created() {

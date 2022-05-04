@@ -19,8 +19,6 @@
 <script>
   import musiclistnavbar from '../../../components/musicListNavBar/index.vue';
   import VideoListCard from 'components/videoListCard/VideoListCard.vue';
-  // import GoTop from 'components/goTop/GoTop.vue';
-  // import SortBox from 'components/sortBox/SortBox.vue';
   export default {
     components: { VideoListCard, musiclistnavbar },
     name: 'VideoList',
